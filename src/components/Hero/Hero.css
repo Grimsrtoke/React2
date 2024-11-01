@@ -1,0 +1,48 @@
+.hero_wrap {
+    display: flex;
+}
+
+.hero_card {
+    border: 10px solid white;
+    height: 400px;
+    background-color: lightblue;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    flex-grow: 1;
+    transition: 500ms;
+    max-width: 400px;
+
+    &:hover{
+        flex-grow: 3;
+
+        .hero_text{
+            display: none;
+        }
+
+        h2{
+            width: 100%;
+            letter-spacing: 0px;
+        
+        }
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    h2 {
+        margin-top: auto;
+        text-align: left;
+        writing-mode: horizontal-tb;
+        letter-spacing: 30px;
+        width: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: 1s;
+        margin-right: auto;
+        
+    }
+}
